@@ -34,17 +34,11 @@
 			* This is not in a sperate file to ease your reading
 			*/
 			/* | Coloring */
-			a {
-				color: #E74C3C;
-			}
-			a:hover, a:focus {
-				color: #C0392B;
-			}
 			#resume-formats a {
 				color: white;
 			}
-			.skill-header, #personal-head {
-				background-color: #2ECC71;
+			.panel-primary {
+				background: rgb(221, 72, 20);
 				color: white;
 			}
 
@@ -67,18 +61,25 @@
 			.email, .mission {
 				text-align: right;
 			}
+			.mission {
+				margin-bottom: 5px;
+			}
 			/* |-- Education */
 			#education .degree {
 				background: white;
 			}
 			/* |-- Skills */
-			#skills .panel-heading {
-				margin-bottom: -16px;
-			}
 			.skill-header {
 				text-align: center;
+				vertical-align: middle;
+			}
+			.skill-header h2 {
+				margin: 20px 0;
 			}
 			/* |-- footer */
+			.version-date {
+				text-align: right;
+			}
 
 			/* Utility */
 			.large-text {
@@ -104,7 +105,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<div id="personal-head" class="panel clearfix">
+					<div id="personal-head" class="panel panel-primary clearfix">
 						<div class="col-sm-4 name">
 							Daniel Dressler
 						</div>
@@ -302,12 +303,12 @@
 				<div class="row">
 					<div id="skills">
 						<div class="col-lg-2">
-							<div class="panel skill-header">
+							<div class="panel panel-primary skill-header">
 								<h2>Skills</h2>
 							</div>
 						</div>
 						<div class="col-lg-2">
-							<div class="panel">
+							<div class="panel panel-default">
 								<div class="panel-heading">Languages:</div>
 								<ul class="list-group list-group-flush">
 									<li class="list-group-item">C</li>
@@ -319,7 +320,7 @@
 							</div>
 						</div>
 						<div class="col-lg-2">
-							<div class="panel">
+							<div class="panel panel-default">
 								<div class="panel-heading">Tools:</div>
 								<ul class="list-group list-group-flush">
 									<li class="list-group-item">Perl DBI</li>
@@ -331,7 +332,7 @@
 							</div>
 						</div>
 						<div class="col-lg-2">
-							<div class="panel">
+							<div class="panel panel-default">
 								<div class="panel-heading">Platforms:</div>
 								<ul class="list-group list-group-flush">
 									<li class="list-group-item">Linux</li>
@@ -341,7 +342,7 @@
 							</div>
 						</div>
 						<div class="col-lg-2">
-							<div class="panel">
+							<div class="panel panel-default">
 								<div class="panel-heading">Web Tech:</div>
 								<ul class="list-group list-group-flush">
 									<li class="list-group-item">jQuery</li>
@@ -352,7 +353,7 @@
 							</div>
 						</div>
 						<div class="col-lg-2">
-							<div class="panel">
+							<div class="panel panel-default">
 								<div class="panel-heading">Languages:</div>
 								<ul class="list-group list-group-flush">
 									<li class="list-group-item">English</li>
@@ -390,7 +391,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-lg-6 col-md-offset-6">
+					<div class="version-date col-lg-6 col-md-offset-6">
 						Resume instance uptodate as of 2013-09-11
 					</div>
 				</div>
