@@ -57,11 +57,10 @@
 				color: white;
 			}
 			.name, .email {
-				display: inline-block;
-				width: 50%;
+				font-size: 2em;
 			}
-			.email {
-				font-align: right;
+			.email, .mission {
+				text-align: right;
 			}
 			#resume-formats a {
 				color: white;
@@ -69,7 +68,7 @@
 			a {
 				color: #E74C3C;
 			}
-			a:hover, a:focus{
+			a:hover, a:focus {
 				color: #C0392B;
 			}
 			#skills .panel-heading {
@@ -81,6 +80,16 @@
 			.centered {
 				text-align: center;
 			}
+			.clearfix {
+				display: block;
+			}
+			.clearfix:after {
+				content: "";
+				display: block;
+				visibility: hidden;
+				height: 0;
+				clear: both;
+			}
 		</style>
 	</head>
 
@@ -88,14 +97,14 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<div id="personal-head" class="panel">
-						<div class="col-lg-6 name">
+					<div id="personal-head" class="panel clearfix">
+						<div class="col-sm-4 name">
 							Daniel Dressler
 						</div>
-						<div class="col-lg-6 email">
+						<div class="col-sm-8 email">
 							Danieru.Dressler@gmail.com
 						</div>
-						<div class="col-lg-6">
+						<div class="col-sm-12 mission">
 							I love <strong>programming</strong> &amp;&amp; <strong>open source</strong> 
 						</div>
 					</div>
