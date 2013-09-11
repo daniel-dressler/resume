@@ -33,6 +33,22 @@
 			/* Note:
 			* This is not in a sperate file to ease your reading
 			*/
+			/* | Coloring */
+			a {
+				color: #E74C3C;
+			}
+			a:hover, a:focus {
+				color: #C0392B;
+			}
+			#resume-formats a {
+				color: white;
+			}
+			.skill-header, #personal-head {
+				background-color: #2ECC71;
+				color: white;
+			}
+
+			/* | General Spacing */
 			body {
 				margin-top: 10px;
 			}
@@ -43,42 +59,36 @@
 				border-collapse: collapse;
 			}
 
-			.empty-space {
-				opacity: 0.1;
-				font-size: 2em;
-				text-align: center;
-				margin-top: 100px;
-			}
-			.large-text {
-				font-size: 1.5em;
-			}
-			.skill-header, #personal-head {
-				background-color: #2ECC71;
-				color: white;
-			}
+			/* | Section Customizations */
+			/* |-- Header */
 			.name, .email {
 				font-size: 2em;
 			}
 			.email, .mission {
 				text-align: right;
 			}
-			#resume-formats a {
-				color: white;
+			/* |-- Education */
+			#education .degree {
+				background: white;
 			}
-			a {
-				color: #E74C3C;
-			}
-			a:hover, a:focus {
-				color: #C0392B;
-			}
+			/* |-- Skills */
 			#skills .panel-heading {
 				margin-bottom: -16px;
 			}
 			.skill-header {
 				text-align: center;
 			}
-			#education .degree {
-				background: white;
+			/* |-- footer */
+			.empty-space {
+				opacity: 0.1;
+				font-size: 2em;
+				text-align: center;
+				margin-top: 100px;
+			}
+
+			/* Utility */
+			.large-text {
+				font-size: 1.5em;
 			}
 			.centered {
 				text-align: center;
