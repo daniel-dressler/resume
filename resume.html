@@ -17,10 +17,10 @@
 		<!--
 		Thank to:
 		Bootstrap
-		wkhtmltopdf
+		PhantomJS
 
 		The pdf version of this resume was generated 
-		from this html with wkhtmltopdf -->
+		from this html with PhantomJS with rasterize.js -->
 
 		<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
 		<!--[if lt IE 9]>
@@ -100,6 +100,17 @@
 				visibility: hidden;
 				height: 0;
 				clear: both;
+			}
+			/* PDF conversion special cases */
+			@media print {
+				body > .container {
+					width: 1200px;
+					font-size: 12px;
+					margin-top: 20px;
+				}
+				.panel-primary, .btn-default {
+					border-color: transparent;
+				}
 			}
 		</style>
 	</head>
@@ -415,6 +426,6 @@
 			 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 			 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 			 })();
-		 </script>
+</script>
 	 </body>
  </html>
