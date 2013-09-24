@@ -20,7 +20,10 @@
 		PhantomJS
 
 		The pdf version of this resume was generated 
-		from this html with PhantomJS with rasterize.js -->
+		from this html with PhantomJS with rasterize.js
+		Command: 
+		$ phantomjs rasterize.js resume.html resume.pdf
+		-->
 
 		<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
 		<!--[if lt IE 9]>
@@ -67,6 +70,10 @@
 			.mission {
 				margin-bottom: 5px;
 			}
+			/* |-- Open Source */
+			.date {
+				min-width: 90px;
+			}
 			/* |-- Education */
 			#education .degree {
 				background: white;
@@ -81,7 +88,9 @@
 			}
 			/* |-- footer */
 			.version-date {
-				text-align: right;
+				text-align: left;
+				font-size: 0.8em;
+				margin-top: 4px;
 			}
 
 			/* Utility */
@@ -105,8 +114,8 @@
 			@media print {
 				body > .container {
 					width: 1200px;
-					font-size: 12px;
-					margin-top: 20px;
+					font-size: 16px;
+					padding-top: 60px;
 				}
 				.panel-primary, .btn-default {
 					border-color: transparent;
@@ -149,12 +158,12 @@
 								<tr>
 									<td><a href="http://www.linuxfoundation.org/collaborate/workgroups/openprinting/databasefoomatic">Foomatic</a></td>
 									<td>Primary contributer to Foomatic 5.0 series. Added support for sqlite backends. Rewrote XML backend replacing 10k lines of code with 2k and improved performance. In 2011 as part of the GSoC program Google funded my foomatic contributions.</td>
-									<td><div class="centered">2010-12 <div>to</div> 2012-04</div></td>
+									<td><div class="date centered">2010-12 <div>to</div> 2012-04</div></td>
 								</tr>
 								<tr>
 									<td><a href="http://libjtapi.org">libjtapi</a></td>
 									<td>Primary developer. Libjtapi is the reference implementation of the Free Standard Group's Job Ticket API, jtapi.  My work is being done under Google's Summer of Code program.</td>
-									<td><div class="centered">2012-03
+									<td><div class="date centered">2012-03
 											<div>to</div> 2012-10</div></td>
 								</tr>
 								<!--
@@ -397,6 +406,9 @@
 								</a>
 							</span>
 						</div>
+						<div class="version-date">
+							Instance uptodate as of 2013-09-11
+						</div>
 					</div>
 					<div class="col-lg-4 large-text">
 						<div>Daniel Dressler</div>
@@ -407,11 +419,6 @@
 						<div>1166 Prestwick Circle S.E.</div>
 						<div>Calgary, Alberta</div>
 						<div>Canada</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="version-date col-lg-6 col-md-offset-6">
-						Resume instance uptodate as of 2013-09-11
 					</div>
 				</div>
 			</div><!-- content end --> 
