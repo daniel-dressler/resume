@@ -75,6 +75,13 @@
 		#gallery {
 			font-size: 1.0em;
 		}
+		#gallery div {
+			margin-bottom: 1em;
+		}
+		#gallery .third div,
+		#gallery .third b {
+			padding-right: 1em;
+		}
 
 	</style>
 </head>
@@ -85,10 +92,19 @@
 <div id="feature_project">
 	<div class="project">
 		<h2>Linux's IPP over USB driver</h2>
+		<p>
+		Wrote and architectured Linux's driver for
+		IPP USB class devices. Contributed patches to
+		system-config-printer enabling autostart support
+		for this usb device class. Completed in 2014, shipping
+		in Ubuntu 14.10+
+		</p>
 	</div>
+	<!--
 	<div class="project">
 		<h2>Clang's C++14 Pool Allocator</h2>
 	</div>
+	-->
 </div>
 <div id="short_brag">
 	<h2><b>1<b>x</b></b> <i>Microsoft</i> Internship working on Windows</h2>
@@ -111,17 +127,42 @@
 </div>
 <div id="gallery" class="clearfix">
 	<h3>Other projects</h3>
-	<div class="third">
-		<div>Programmed a game for the original Gameboy?</div>
-		<div>Wrote a FreeBSD rootkit for a university course?</div>
+	<div>
+		<div class="third">
+			<b>OCASE BCDE (C++, 2013)</b>
+			<div>Wrote internal Microsoft framework and language to script analysis of 10K+
+				coredump batches.</div>
+		</div>
+		<div class="third">
+			<b>Contract Webdev (HTML, 2010-2013)</b>
+			<div>Developed 10+ websites ranging from marilynmonroe.com, 
+				necaonline.com, to eCommerce sites</div>
+		</div>
+		<div class="third">
+			<b>Foomatic Database Engine (Perl, 2011)</b>
+			<div>Rewrote linux's printer database generation into Perl, reducing code size by 8K
+				lines by 8K lines. Added SQLite backend. Shipped in Ubuntu 12.04</div>
+		</div>
 	</div>
-	<div class="third">
-		<div>Wrote Firefox OS's Out-Of-Memory killer monitoring?</div>
-		<div>Programmed a high-performance 3D game in javascript?</div>
-	</div>
-	<div class="third">
-		<div>Wrote Firefox OS's Out-Of-Memory killer monitoring?</div>
-		<div>Programmed a high-performance 3D game in javascript?</div>
+	<div>
+		<div class="third">
+			<b>ExtractZipFile (C & Javascript, 2013)</b>
+			<div>Wrote BlackberryOS10's HTML5 ZIP library. Provides
+				Javascript with interfacing to native C
+				for max performance.</div>
+		</div>
+		<div class="third">
+			<b>Original Gameboy Game (C, 2014)</b>
+			<div>Wrote gameplay for a shmup running on the original
+				Gameboy. Fought broken compilers to extract maximum
+				performance on a 1Mhz CPU without multiplication
+				support.</div>
+		</div>
+		<div class="third">
+			<b>LIBJTAPI (C, 2012)</b>
+			<div>Implemeted Free Standards Group's abstract job ticket
+				manipulation.</div>
+		</div>
 	</div>
 </div>
 </body>
