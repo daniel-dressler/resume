@@ -12,7 +12,10 @@
 	-->
 
 	<style type="text/css">
-		html {font-size: 13px;}
+		html {
+			font-size: 13px;
+			line-height: 20px;
+		}
 		body, html {padding: 0; margin: 0}
 		body {margin: 2em; color: #333}
 		body > div {width: 100%; max-width: 900px; margin: 0 auto;}
@@ -21,7 +24,9 @@
 		#contact_header {
 			display: table;
 		}
-		#contact_header h1 {
+		#contact_header h1,
+		#contact_header h2 {
+			padding-bottom: 0.5em;
 		}
 		#contact_header h2 {
 			text-align: right;
@@ -60,6 +65,9 @@
 		#didyouknow {
 			font-size: 1.3em;
 		}
+		#didyouknow > div {
+			display: table;
+		}
 		#didyouknow ul,
 		#didyouknow h3 {
 			margin: 0.5em 0;
@@ -68,6 +76,10 @@
 
 		#gallery {
 			font-size: 1.0em;
+		}
+		#gallery h3,
+		h3 {
+			text-align: center;
 		}
 		#gallery div {
 			margin-bottom: 1em;
@@ -90,6 +102,7 @@
 			display: table;
 			border-top: 1px solid #000;
 			padding-top: 1em;
+			text-align: center;
 		}
 		#stat > div > div {
 			margin-right: 1em;
@@ -116,11 +129,11 @@
 		<h2>Linux's IPP over USB driver</h2>
 		<p>
 		Wrote Linux's driver for
-		IPP USB class devices: ippusbxd. Contributed patches to
-		system-config-printer enabling autostart support
-		for this class of printers. The driver proxies HTTP between
-		TCP and USB Bulk. Completed in 2014, shipping
-		in all Linux distributions late 2014. Written in <b>C</b>.
+		IPP USB class devices. Contributed patches to
+		system-config-printer for autostart support.
+		The driver, ippusbxd, proxies HTTP between
+		TCP and USB Bulk. Completed in 2014. Shipping
+		in Ubuntu 14.04. Written in <b>C</b>.
 		</p>
 	</div>
 </div>
@@ -130,17 +143,19 @@
 </div>
 <div id="didyouknow" class="clearfix">
 	<h3>Did you know I have programmed...</h3>
-	<div class="half">
-		<ul>
-			<li>A game for the original Gameboy?</li>
-			<li>A rootkit for a university course?</li>
-		</ul>
-	</div>
-	<div class="half">
-		<ul>
-			<li>Firefox OS's OOM killer monitoring?</li>
-			<li>A 3D game in javascript?</li>
-		</ul>
+	<div>
+		<div class="half">
+			<ul>
+				<li>A game for the original Gameboy in C?</li>
+				<li>A FreeBSD rootkit for bonus marks?</li>
+			</ul>
+		</div>
+		<div class="half">
+			<ul>
+				<li>Firefox OS's Out-Of-Memory Killer logcat logging?</li>
+				<li>A 3D turn-based-strategy game in javascript?</li>
+			</ul>
+		</div>
 	</div>
 </div>
 <div id="gallery" class="clearfix">
@@ -188,6 +203,7 @@
 		<h3>Degree</h3>
 		<div>University of Calgary</div>
 		<div>Bachelor of Science</div>
+		<div>in Computer Science</div>
 		<div>GPA: 3.38</div>
 	</div>
 	<div class="third">
@@ -199,7 +215,7 @@
 	<div id="workhistory" class="third">
 		<h3>Work History</h3>
 		<div>GSoC Linux Foundation (Summer 2014)</div>
-		<div>Microsoft Intership (Summer 2013)</div>
+		<div>Microsoft Internship (Summer 2013)</div>
 		<div>GSoC Linux Foundation (Summer 2012)</div>
 		<div>GSoC Linux Foundation (Summer 2011)</div>
 		<div>Wal-Mart (2008-2010)</div>
