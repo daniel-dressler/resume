@@ -12,40 +12,19 @@
 	-->
 
 	<style type="text/css">
-		html {font-size: 14px;}
+		html {font-size: 13px;}
 		body, html {padding: 0; margin: 0}
 		body {margin: 2em; color: #333}
 		body > div {width: 100%; max-width: 900px; margin: 0 auto;}
-		.clearfix:after {
-			content: "";
-			display: block;
-			clear: both;
-			visibility: hidden;
-			line-height: 0;
-			height: 0;
-		}
-		.half {width: 50%; float: left;}
-		.third {width: 33%; float: left;}
 		i {font-size: 1.01em; color: #222;}
 		
+		#contact_header {
+			display: table;
+		}
 		#contact_header h1 {
-			float: left;
-			width: 35%;
-		}
-		.floatCenter {
-			float: left;
-			width: 30%;
-			font-size: 1.1em;
-			font-weight: 700;
-			padding-top: 0.7em;
-		}
-		#contact_header div {
-			text-align: center;
 		}
 		#contact_header h2 {
-			float: right;
 			text-align: right;
-			width: 35%;
 		}
 
 		/* Borders */
@@ -98,17 +77,43 @@
 			padding-right: 1em;
 		}
 
+		.third {
+			display: table-cell;
+			width: 25%;
+		}
+		.half {
+			display: table-cell;
+			width: 50%;
+		}
+
+		#stats {
+			display: table;
+			border-top: 1px solid #000;
+			padding-top: 1em;
+		}
+		#stat > div > div {
+			margin-right: 1em;
+		}
+		#stat h3 {
+			margin-bottom: 0.4em;
+		}
+		#university > div {
+			font-size: 1.4em;
+		}
+		#workhistory > div {
+			font-family: monospace;
+			font-size: 0.5em;
+		}
 	</style>
 </head>
 <body>
 <div id="contact_header" class="clearfix">
-	<h1>Daniel Dressler</h1>
-	<div class="floatCenter">University of Calgary<br>Graduated BS 2014 GPA: 3.376</div>
-	<h2>danieru.dressler@gmail.com</h2>
+	<h1 class="half">Daniel Dressler</h1>
+	<h2 class="half">danieru.dressler@gmail.com</h2>
 </div>
 <div id="feature_project">
 	<div class="project">
-		<h2>Linux's IPP USB class driver</h2>
+		<h2>Linux's IPP over USB driver</h2>
 		<p>
 		Wrote Linux's driver for
 		IPP USB class devices: ippusbxd. Contributed patches to
@@ -118,11 +123,6 @@
 		in all Linux distributions late 2014. Written in <b>C</b>.
 		</p>
 	</div>
-	<!--
-	<div class="project">
-		<h2>Clang's C++14 Pool Allocator</h2>
-	</div>
-	-->
 </div>
 <div id="short_brag">
 	<h2><b>1<b>x</b></b> <i>Microsoft</i> Internship working on Windows</h2>
@@ -181,6 +181,29 @@
 				manipulation. Closely matches Printer Working
 				Group's Semantic Model.</div>
 		</div>
+	</div>
+</div>
+<div id="stats">
+	<div id="university" class="third">
+		<h3>Degree</h3>
+		<div>University of Calgary</div>
+		<div>Bachelor of Science</div>
+		<div>GPA: 3.38</div>
+	</div>
+	<div class="third">
+		<h3>Address</h3>
+		<div>Sakura House Motohasunuma #210,</div>
+		<div>45-18 Hasunuma-cho,</div>
+		<div>Itabashi-ku, Tokyo 174-0052</div>
+	</div>
+	<div id="workhistory" class="third">
+		<h3>Work History</h3>
+		<div>GSoC Linux Foundation (Summer 2014)</div>
+		<div>Microsoft Intership (Summer 2013)</div>
+		<div>GSoC Linux Foundation (Summer 2012)</div>
+		<div>GSoC Linux Foundation (Summer 2011)</div>
+		<div>Wal-Mart (2008-2010)</div>
+		<div>McDonalds (2006-2008)</div>
 	</div>
 </div>
 </body>
